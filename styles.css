@@ -3,3 +3,14 @@
 body {
     background-color: #b9e0e7;
 }
+
+.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.2s;    
+}
