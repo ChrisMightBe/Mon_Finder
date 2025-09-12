@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Item Search</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css"/>
     <script src="script.js" defer></script>
 </head>
+
 <body>
+    <h1>Item Information</h1>
+
+    <p>This page is for finding information on items in the Pokémon games</p>
+
     <div class="pages">
         <nav>
             <a class="nav-btn hme" href = "index.html">Home</a>
-            <a class="nav-btn pkmn" href = "pokemon_search.html">Pokemon Information</a>
+            <a class="nav-btn pkmn" href = "pokemon_search.html">Pokémon Information</a>
             <a class="nav-btn typ" href = "type_search.html">Type Information</a>
             <a class="nav-btn ablty" href = "ability_search.html">Ability Information</a>
         </nav>
     </div>
+
+    <div class="searchSection">
+        <input class = input id="iSearchInput" type="text" placeholder="Enter Item name..." />
+        <button class="searchButton" onclick="searchItem()">Search</button>
+    </div>
+
+    <div id="itemInfo">
+        <!-- Item information will be displayed here -->
+    </div>
+
 </body>
+
 </html>
