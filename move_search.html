@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Item Search</title>
+    <title>Move Search</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css"/>
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <h1>Type Information</h1>
-    <p>This page is for finding information on type effectiveness for both sigle and dual type Pokémon</p>
+    <h1>Move Information</h1>
+    <p>This page is for finding information on Pokémon moves including type, power, accuracy, and effects</p>
     <div class="pages">
         <nav>
             <a class="nav-btn hme" href = "index.html">Home</a>
             <a class="nav-btn pkmn" href = "pokemon_search.html">Pokémon Information</a>
-            <a class="nav-btn mve" href = "move_search.html">Move Information</a>
+            <a class="nav-btn typ" href = "type_search.html">Type Information</a>
             <a class="nav-btn ablty" href = "ability_search.html">Ability Information</a>
             <a class="nav-btn itm" href = "item_search.html">Item Information</a>
         </nav>
     </div>
     <div class="searchSection">
-        <input id="tSearchInput1" type="text" placeholder="Enter first type..." />
-        <input id="tSearchInput2" type="text" placeholder="Enter second type (optional)..." />
-        <button class="searchButton" onclick="calculateEffectiveness()">Search</button>
+        <input id="mSearchInput" type="text" placeholder="Enter move name..." />
+        <button class="searchButton" onclick="searchMove()">Search</button>
     </div>
-    <div id="typeInfo">
-        <!-- Type information will be displayed here -->
+    <div id="moveInfo">
+        <!-- Move information will be displayed here -->
     </div>
-</body>
 </html>
