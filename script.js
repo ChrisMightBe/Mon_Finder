@@ -49,7 +49,7 @@ async function searchPokemon() {
             <p><strong>Abilities:</strong> ${abilities}</p>
         `;
 
-        await calculateEffectiveness(types[0], types[1] || null, pInfoDiv);
+    await calculateEffectiveness(types[0], types[1] || null, pInfoDiv);
     } catch (error) {
         pInfoDiv.innerHTML = `<p style="color:red;">${error.message}</p>`;
     }
@@ -205,7 +205,7 @@ async function calculateEffectiveness(type1, type2, container) {
             }
         }
         resultHTML += `</ul>`;
-        container.innerHTML = resultHTML;
+        container.innerHTML += resultHTML;
 
     } catch (error) {
         container.innerHTML = `<p style="color:red;">${error.message}</p>`;
