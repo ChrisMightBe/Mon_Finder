@@ -205,7 +205,7 @@ async function calculateEffectiveness(type1, type2, container) {
             }
         }
         resultHTML += `</ul>`;
-        container.innerHTML += resultHTML;
+        container.innerHTML = resultHTML;
 
     } catch (error) {
         container.innerHTML = `<p style="color:red;">${error.message}</p>`;
